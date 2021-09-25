@@ -30,8 +30,8 @@ a {
   top: 0;
   margin: auto;
   border: 1px solid black;
-  background: url("../img/lykke-spectr.png") no-repeat center;
-  background-size: 50%;
+  background: url("../img/lykke-spectr.png") no-repeat right;
+  background-size: 70%;
   z-index: -1;
 }
 
@@ -103,7 +103,48 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  white-space: nowrap;
+}
+
+.social-link {
+  margin-left: 4px;
+  color: #A6B200;
+}
+
+.social-link:hover {
+  color: #D8E700;
+}
+
+.social-link:not(:hover) {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.link, .git {
+  position: relative;
+}
+
+.link:hover, .git:hover {
+  margin-left: 5px;
+}
+
+.block-links a:before {
+  content: "";
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #f0ff00;
+  border-radius: 10px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.block-links a:hover:before {
+  width: 100%;
+  left: 0;
 }
 
 .img-logo {
@@ -348,7 +389,6 @@ h3 {
 
   .block-description {
     max-width: 100%;
-    margin-left: 0;
     text-align: center;
   }
 }
