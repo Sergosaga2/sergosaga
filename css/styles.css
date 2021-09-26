@@ -97,12 +97,14 @@ a {
 .social-links {
   max-width: 400px;
   margin-top: 100px;
+  font-size: 18px;
 }
 
 .social-links p, .social-links-991 p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: #f0ff00;
 }
 
 .social-link {
@@ -330,6 +332,7 @@ h3 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    margin-bottom: 40px;
   }
 
   .container-1-content {
@@ -359,7 +362,7 @@ h3 {
     margin-left: 0;
     text-align: center;
     font-size: 4vmax;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   .social-links-991 {
@@ -389,7 +392,7 @@ h3 {
 
   .block-description {
     max-width: 100%;
-    text-align: center;
+    margin-left: 40px;
   }
 
   .bg {
